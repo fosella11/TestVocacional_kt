@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TestVocacional</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash">Test\nVocacional\nAyudando\na conocer su\norientación \nRprofesional</string>
+
+    <string name="network_error">Network Error. Please try again</string>
+    <string name="server_error">Server Error. Please try again</string>
+    <string name="common_error">An error occurred. Please try again</string>
+    <string name="owner_name">Repository Owner Name</string>
+    <string name="repo_name">Repository Name</string>
+    <string name="search">SEARCH</string>
+    <string name="change_repository">Change Repository</string>
+
+    <string name="open">open</string>
+    <string name="closed">closed</string>
+    <string name="network_lost">Network connection lost</string>
+    <string name="cambiar_lenguage">Cambiar lenguage</string>
+    <string name="more_info">En que consiste?</string>
+    <string name="run_test">Realizar Test</string>
+    <string name="result">Resultado</string>
+    <string name="more_info_tittle">En que consiste</string>
+    <string name="more_info_description">No disponible, Disculpe las molestias!</string>
+    <string name="question_list_yes_button">Si</string>
+    <string name="question_list_no_button">No</string>
+</resources>
