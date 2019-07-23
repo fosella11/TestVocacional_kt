@@ -32,12 +32,13 @@ class TestViewModel(private val appRepository: AppRepository): ViewModel() {
         }
         viewModelScope.launch(handler) {
             try {
-                questionLiveData.postValue(Response.Success(appRepository.getTestVocacional().questions))
+                questionLiveData.postValue(Response.Success(appRepository.getQuestionsFromDB()))
             } catch (exception: Exception) {
                 //if (page == 1) {
-                questionLiveData.postValue(
+                //TODO : AGREGAR ESTA LOGICA, NO DEBERIA DEVOLVER LO MISMO EL ERROR
+                /*questionLiveData.postValue(
                     Response.Error(
-                        null,appRepository.getQuestionsFromDB()))
+                        null,appRepository.getQuestionsFromDB()))*/
                 //}else{
                 //    throw exception
                 //}

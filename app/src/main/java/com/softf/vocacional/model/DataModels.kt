@@ -1,5 +1,6 @@
 package com.softf.vocacional.model
 
+import android.graphics.drawable.Drawable
 import androidx.room.*
 import com.google.gson.annotations.SerializedName
 
@@ -62,6 +63,11 @@ data class User(
     val avatar_url: String = ""
 )
 
+data class Result(
+    val image: Int = 0,
+    val imageShare: Int = 0
+)
+
 data class VocacionalTest(
     val name: String = "",
     val language: String = "",
@@ -107,7 +113,7 @@ data class Question(
 @Dao
 interface ProductDao {
 
-    @Query("SELECT * FROM product ORDER BY uid DESC")
+    @Query("SELECT * FROM product")
     suspend fun getProducts(): List<Product>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
@@ -120,7 +126,7 @@ interface ProductDao {
 @Dao
 interface QuestionDao {
 
-    @Query("SELECT * FROM question ORDER BY uid DESC")
+    @Query("SELECT * FROM question")
     suspend fun getQuestions(): List<Question>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

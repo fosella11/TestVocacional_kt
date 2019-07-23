@@ -68,8 +68,8 @@ class TestAdapter(private val onQuestionsClickedListener: OnQuestionsClickedList
      * With Filter by ID
      */
     fun addQuestions(questionList: List<Question>, idTest: Int) {
-        this.questionList.addAll(questionList)
-        this.questionList.filter { it.testId == idTest }
+        val filtered = questionList.filter { it.testId == idTest }
+        this.questionList.addAll(filtered)
         notifyDataSetChanged()
     }
 

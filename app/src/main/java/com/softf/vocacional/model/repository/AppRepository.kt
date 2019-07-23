@@ -89,7 +89,7 @@ class AppRepository(
         return testVocacionalData
     }
 
-    suspend fun getProductsFromDB() = appDatabase.productDao().getProducts().reversed()
+    suspend fun getProductsFromDB() = appDatabase.productDao().getProducts()
 
     suspend fun getQuestionsFromDB() = appDatabase.questionDao().getQuestions()
 
