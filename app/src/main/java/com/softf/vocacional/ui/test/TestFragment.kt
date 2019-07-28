@@ -100,6 +100,7 @@ class TestFragment : BaseFragment<FragmentQuestionsBinding>(), TestAdapter.OnQue
                 viewModel.updateQuestion(question)
             }
         }
+        questionAdapter.notifyDataSetChanged()
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

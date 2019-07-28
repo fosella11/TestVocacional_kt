@@ -24,4 +24,6 @@
     <string name="more_info_description">No disponible, Disculpe las molestias!</string>
     <string name="question_list_yes_button">Si</string>
     <string name="question_list_no_button">No</string>
+    <string name="share_result">Compartir Resultado</string>
+    <string name="error_require_questions">Debes responder todas las preguntas para obtener resultados</string>
 </resources>

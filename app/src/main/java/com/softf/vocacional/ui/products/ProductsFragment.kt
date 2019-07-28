@@ -144,9 +144,7 @@ class ProductsFragment : BaseFragment<FragmentProductsBinding>(),
     private fun resultTest(product: Product){
         if (findNavController().currentDestination?.id == R.id.productsFragment) {
             findNavController().navigate(
-                ProductsFragmentDirections.actionProductsFragmentToResultTest(
-                    R.drawable.ad, R.drawable.ad
-                )
+                ProductsFragmentDirections.actionProductsFragmentToResultTest(product.uid.toString())
             )
         }
     }

@@ -64,8 +64,8 @@ data class User(
 )
 
 data class Result(
-    val image: Int = 0,
-    val imageShare: Int = 0
+    val image: String = "Default",
+    val textImportanceResult: String = ""
 )
 
 data class VocacionalTest(
@@ -95,6 +95,8 @@ data class Product(
 @Entity(tableName = "question")
 data class Question(
     @PrimaryKey var uid: Int,
+    @SerializedName("question_id")
+    @ColumnInfo(name = "questionId") var questionId: Int,
     @SerializedName("test_id")
     @ColumnInfo(name = "testId") var testId: Int,
     @SerializedName("name")

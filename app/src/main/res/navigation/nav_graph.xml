@@ -68,15 +68,9 @@
     </fragment>
     <fragment
         android:id="@+id/resultTest"
-        android:name="com.softF.Vocacional.ResultTest"
+        android:name="com.softf.vocacional.ui.result.ResultTest"
         android:label="fragment_result_test"
         tools:layout="@layout/fragment_result_test" >
-        <argument
-            android:name="imageShow"
-            app:argType="integer"
-            android:defaultValue="0" />
-        <argument
-            android:name="imageShare"
-            app:argType="integer" />
+        <argument android:name="result" app:argType="string" android:defaultValue="error"/>
     </fragment>
 </navigation>

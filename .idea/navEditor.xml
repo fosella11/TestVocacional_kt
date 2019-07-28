@@ -36,6 +36,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_productsFragment_to_resultTest">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_productsFragment_to_testFragment">
                               <value>
                                 <LayoutPositions />

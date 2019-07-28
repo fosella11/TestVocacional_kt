@@ -56,6 +56,8 @@
                     android:layout_marginStart="16dp"
                     android:onClick="@{() -> onQuestionClickedListener.onQuestionClickedListener(question, 1)}"
                     android:layout_marginBottom="16dp"
+                    app:setColorYes="@{question.response}"
+                    app:responded="@{question.isResponded}"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     tools:text="@string/question_list_yes_button"/>
@@ -72,6 +74,8 @@
                     android:onClick="@{() -> onQuestionClickedListener.onQuestionClickedListener(question, 0)}"
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="16dp"
+                    app:setColorNo="@{question.response}"
+                    app:responded="@{question.isResponded}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
 

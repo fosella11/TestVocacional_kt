@@ -15,7 +15,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context="com.softf.vocacional.ui.NavigationActivity">
-
+<ScrollView
+        android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -50,6 +52,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     tools:text="@string/more_info_description"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
     </FrameLayout>
 
 </layout>

@@ -12,6 +12,7 @@ import com.softf.vocacional.utils.SharedPreferencesHelper
 import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.softf.vocacional.ui.products.ProductsViewModel
+import com.softf.vocacional.ui.result.ResultTestViewModel
 import com.softf.vocacional.ui.test.TestViewModel
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -55,4 +56,5 @@ val appModule = module {
     viewModel { SplashViewModel(get()) }
     viewModel { ProductsViewModel(get()) }
     viewModel { TestViewModel(get()) }
+    viewModel { ResultTestViewModel(get()) }
 }
