@@ -12,8 +12,10 @@
     <color name="underLineColor">#78797A</color>
     <color name="green">#8BC34A</color>
     <color name="red">#F44336</color>
+    <color name="orange">#FBB03B</color>
 
-    <color name="blue">#3F51B5</color>
+
+    <color name="blue">#1D394D</color>
     <color name="long_text_color">#747474</color>
 
     <color name="textColor">#2f3640</color>

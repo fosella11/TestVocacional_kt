@@ -44,7 +44,7 @@ class ResultTestViewModel(private val appRepository: AppRepository) : ViewModel(
                         it.testId == 2 && it.isResponded
                     }
                     // 0 .. 100
-                    if (questions.size != 79) {
+                    if (questions.size != 80) {
                         resultNotReady.postValue(SingleEvent(true))
                         return@launch
                     }
@@ -73,8 +73,8 @@ class ResultTestViewModel(private val appRepository: AppRepository) : ViewModel(
 
     private fun createListTestTwo(arrayList: ArrayList<String>): List<Result> {
         var results = ArrayList<Result>()
-        val r1 = Result(arrayList[0], "Mas apto")
-        val r2 = Result(arrayList[1], "Segunda opcion")
+        val r1 = Result(arrayList[0], "Primer opción")
+        val r2 = Result(arrayList[1], "Segunda opción")
         results.add(r1)
         results.add(r2)
         return results

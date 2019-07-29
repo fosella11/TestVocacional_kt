@@ -129,6 +129,12 @@ fun setColorYes(textView: TextView, setColorYes: Boolean, responded: Boolean) {
             )
             textView.setTextColor(R.color.blue)
         }
+    }else{
+        ViewCompat.setBackground(
+            textView,
+            ContextCompat.getDrawable(textView.context, R.drawable.transparent_rect_filled)
+        )
+        textView.setTextColor(R.color.blue)
     }
 }
 
@@ -149,6 +155,12 @@ fun setColorNo(textView: TextView, setColorNo: Boolean, responded: Boolean) {
             )
             textView.setTextColor(R.color.blue)
         }
+    }else{
+        ViewCompat.setBackground(
+            textView,
+            ContextCompat.getDrawable(textView.context, R.drawable.transparent_rect_filled)
+        )
+        textView.setTextColor(R.color.blue)
     }
 }
 
