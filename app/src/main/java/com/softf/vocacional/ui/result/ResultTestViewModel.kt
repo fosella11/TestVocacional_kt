@@ -3,10 +3,10 @@ package com.softf.vocacional.ui.result
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.softf.vocacional.R
 import com.softf.vocacional.model.Response
 import com.softf.vocacional.model.Result
 import com.softf.vocacional.model.repository.AppRepository
-import com.softf.vocacional.utils.ProcessTests
 import com.softf.vocacional.utils.SingleEvent
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.launch
@@ -63,20 +63,48 @@ class ResultTestViewModel(private val appRepository: AppRepository) : ViewModel(
     }
 
     private fun createListTestOne(arrayList: ArrayList<String>): List<Result> {
-        var results = ArrayList<Result>()
-        val r1 = Result(arrayList[0], "Intereses")
-        val r2 = Result(arrayList[1], "Aptitudes")
+        val results = ArrayList<Result>()
+        val r1 = Result(getShareImage(arrayList[0]), arrayList[0], "Intereses")
+        val r2 = Result(getShareImage(arrayList[1]), arrayList[1], "Aptitudes")
         results.add(r1)
         results.add(r2)
         return results.toMutableList()
     }
 
     private fun createListTestTwo(arrayList: ArrayList<String>): List<Result> {
-        var results = ArrayList<Result>()
-        val r1 = Result(arrayList[0], "Primer opción")
-        val r2 = Result(arrayList[1], "Segunda opción")
+        val results = ArrayList<Result>()
+        val r1 = Result(getShareImage(arrayList[0]),arrayList[0], "Primer opción")
+        val r2 = Result(getShareImage(arrayList[1]),arrayList[1], "Segunda opción")
         results.add(r1)
         results.add(r2)
         return results
+    }
+
+    private fun getShareImage(imageResult: String): Int{
+        var image = R.drawable.testprofesional
+        when (imageResult) {
+            "A1" -> image = R.drawable.ac_share
+            "A2" -> image = R.drawable.ah_share
+            "A3" -> image = R.drawable.aa_share
+            "A4" -> image = R.drawable.aas_share
+            "A5" -> image = R.drawable.ai_share
+            "A6" -> image = R.drawable.ad_share
+            "A7" -> image = R.drawable.ae_share
+            "I1" -> image = R.drawable.ic_share
+            "I2" -> image = R.drawable.ih_share
+            "I3" -> image = R.drawable.ia_share
+            "I4" -> image = R.drawable.iis_share
+            "I5" -> image = R.drawable.ii_share
+            "I6" -> image = R.drawable.id_share
+            "I7" -> image = R.drawable.ie_share
+            //TEST 2
+            "AA1" -> image = R.drawable.ii_a_one
+            "AA2" -> image = R.drawable.ii_a_two
+            "AA3" -> image = R.drawable.ii_a_three
+            "AA4" -> image = R.drawable.ii_a_four
+            "AA5" -> image = R.drawable.ii_a_five
+            else -> image = R.drawable.testprofesional
+        }
+        return image 
     }
 }

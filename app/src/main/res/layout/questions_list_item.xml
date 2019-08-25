@@ -14,7 +14,7 @@
 
     <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             app:cardElevation="4dp"
             app:cardCornerRadius="6dp"
             android:layout_marginStart="8dp"
@@ -35,15 +35,16 @@
                     android:text="@{question.question}"
                     android:textColor="@color/long_text_color"
                     android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="8dp"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="32dp"
+                    android:textSize="@dimen/explination"
                     android:lineSpacingExtra="@dimen/spacingMoreInfoAndQuestionText"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintBottom_toTopOf="@+id/moreInfoButtonTextView"
-                    tools:text="@string/common_error"/>
+                    tools:text="@string/common_error"
+                    app:layout_constraintBottom_toTopOf="@+id/testCardQuestionButtonYes"
+                    android:layout_marginBottom="32dp"/>
 
             <TextView
                     android:id="@+id/testCardQuestionButtonYes"

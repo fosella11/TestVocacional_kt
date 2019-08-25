@@ -54,7 +54,8 @@ class ResultsAdapter(private val onResultsClickedListener: OnResultsClickedListe
 
 
     interface OnResultsClickedListener {
-        fun onResultsClicked(product: Result)
+        fun onResultsShare(result: Result)
+        fun onResultsRate(result: Result)
     }
 
 }

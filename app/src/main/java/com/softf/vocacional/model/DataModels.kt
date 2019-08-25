@@ -64,6 +64,7 @@ data class User(
 )
 
 data class Result(
+    val imageShare: Int? = null,
     val image: String = "Default",
     val textImportanceResult: String = ""
 )
